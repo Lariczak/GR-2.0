@@ -4,8 +4,8 @@ async function redesFavoritasMundo() {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/redes-favoritas.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const redes = Object.keys(dados)
-    const valores = Object.values(dados)
+    const redes = ['0 a 14','15 a 64', '65 ou mais']
+    const valores = ['19,8','69,3','10,9']
 
     const data = [
         {
